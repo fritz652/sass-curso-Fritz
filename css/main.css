@@ -33,9 +33,6 @@ article {
   padding-right: 45px;
   display: flex;
   justify-content: space-between;
-  /*     .impact-section {
-          background-color: whitesmoke;
-      } */
 }
 article .impact-section {
   display: flex;
