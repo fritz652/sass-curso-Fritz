@@ -9,11 +9,29 @@ $paragraph-size: 1.5em;
 body {
     margin: 0;
     padding: 0;
+    background-color: $primary-color;
+    font-family: $font-stack;
 }
 
 nav {
+    width: auto;
+    padding: 10px;
     background-color: $primary-color;
-    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-text-color;
+    p {
+        font-size: 1.5em;
+        padding-left: 30px;
+    }
+    .icons {
+        display: flex;
+        gap: 15px;
+        button {
+            background: none;
+            border-style: none;
+        }
+    }
 }
 
 main {
