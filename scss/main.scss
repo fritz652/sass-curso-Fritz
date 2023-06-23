@@ -79,7 +79,7 @@ main {
 section {
     width: auto;
     height: auto;
-    background-color: pink;
+    /* background-color: pink; */
     padding: 60px;
 
     h2 {
@@ -87,6 +87,7 @@ section {
         font-size: 2em;
     }
     .healthcare {
+        padding-bottom: 60px;
         h2 {
             font-weight: 300;
             padding-bottom: 60px ;
@@ -96,6 +97,7 @@ section {
             width: auto;
             height: auto;
             justify-content: center;
+            flex-wrap: wrap;
             align-items: center;
             column-gap: 100px;
             row-gap: 80px;

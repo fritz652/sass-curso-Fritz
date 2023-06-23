@@ -70,12 +70,15 @@ main {
 section {
   width: auto;
   height: auto;
-  background-color: pink;
+  /* background-color: pink; */
   padding: 60px;
 }
 section h2 {
   color: #7C6A0A;
   font-size: 2em;
+}
+section .healthcare {
+  padding-bottom: 60px;
 }
 section .healthcare h2 {
   font-weight: 300;
@@ -86,6 +89,7 @@ section .healthcare .card-section {
   width: auto;
   height: auto;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   -moz-column-gap: 100px;
        column-gap: 100px;
