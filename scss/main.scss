@@ -105,51 +105,58 @@ section {
             column-gap: 100px;
             row-gap: 80px;
             
-            .product-card {
-                /* width: 10vw; */
-                width: 20vw;
-                height: 38vw;
-                background-color: $secondary-color;
-                color: $primary-text-color;
-                padding: 20px;
-                border-radius: 8px;
-                .icon{
-                    width: 100%;
-                    display: flex;
-                    justify-content: flex-end;
-                    padding-bottom: 12px;
-                    svg{
-                        width: 28px;
-                        height: 28px;
-                    }
-                }
-                .product-image {
-                    width: 100%;
-                    height: auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    img {
-                        /* width: 200px;
-                        height: 250px; */
-                        /* width: 12vw; */
-                        width: 20vw;
-                        height: 25vw;
-                        object-fit: cover;
-                        border-radius: 6px;
-                    }
-                }
-                h3 {
-                    @media (max-width:1130px) {
-                        font-size: 1em;
-                    }
-                }
-                p {
-                    @media (max-width:1130px) {
-                        font-size: 0.8em;
-                    }
+        }
+        .product-card {
+            /* width: 10vw; */
+            width: 20vw;
+            height: 38vw;
+            background-color: $secondary-color;
+            color: $primary-text-color;
+            padding: 20px;
+            border-radius: 8px;
+            .icon{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 12px;
+                svg{
+                    width: 28px;
+                    height: 28px;
                 }
             }
+            .product-image {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    /* width: 200px;
+                    height: 250px; */
+                    /* width: 12vw; */
+                    width: 20vw;
+                    height: 25vw;
+                    object-fit: cover;
+                    border-radius: 6px;
+                }
+            }
+            h3 {
+                @media (max-width:1130px) {
+                    font-size: 1em;
+                }
+            }
+            p {
+                @media (max-width:1130px) {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+    .furniture {
+        @extend .healthcare;
+        .product-card {
+            background-color: $tertiary-color;
+            color: white;
         }
     }
 }
