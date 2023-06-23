@@ -4,6 +4,9 @@ body {
   background-color: #FFEFE7;
   font-family: "IBM Plex Sans", sans-serif;
 }
+body svg path {
+  stroke: currentColor;
+}
 
 nav {
   width: auto;

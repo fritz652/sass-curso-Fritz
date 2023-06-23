@@ -11,6 +11,9 @@ body {
     padding: 0;
     background-color: $primary-color;
     font-family: $font-stack;
+    svg path {
+        stroke: currentColor;        
+    }
 }
 
 nav {
