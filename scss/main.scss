@@ -181,6 +181,35 @@ section {
         }
     }
 }
+
+.about-us {
+    padding-bottom: 60px;
+    @extend .healthcare;
+    h2 {
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+    .mision-section {
+        @include flexCenter(row,space-evenly ,center );
+        .earth {
+            max-width:30vw;
+            display: flex;
+            gap:40px;
+            color: #E86424;
+            img {
+                object-fit: contain;
+            }
+            p {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .innovation {
+        @extend .earth;
+    }
+}
+
 .footer {
     $background :$quaternary-color;
     background-color :$background;
