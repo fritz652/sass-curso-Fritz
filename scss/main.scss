@@ -6,22 +6,42 @@ $quaternary-color:#FA9500;
 $font-stack: 'IBM Plex Sans', sans-serif;
 $paragraph-size: 1.5em;
 
+@mixin flexCenter ($direction, $content, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items:  $align;
+}
+
+@mixin buttonStyle {
+    button {
+        background: none;
+        border-style: none;
+    }
+}
+
+@mixin svgStyle ($color, $width, $height){
+    svg {
+        width: $width;
+        height: $height;
+        path {
+            stroke: $color; 
+        }
+    } 
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: $primary-color;
     font-family: $font-stack;
-    svg path {
-        stroke: currentColor;        
-    }
 }
 
 nav {
     width: auto;
-    padding: 10px;
+    @include flexCenter(row,space-between ,center );
+    padding: 15px;
     background-color: $primary-color;
-    display: flex;
-    justify-content: space-between;
     color: $primary-text-color;
     p {
         font-size: $paragraph-size;
@@ -30,10 +50,8 @@ nav {
     .icons {
         display: flex;
         gap: 15px;
-        button {
-            background: none;
-            border-style: none;
-        }
+        @include buttonStyle;
+        @include svgStyle($primary-text-color,36px ,36px )
     }
 }
 
@@ -59,11 +77,11 @@ article {
     p{
         font-size: $paragraph-size;
     }
+    @include buttonStyle;
     button {
         width: 12vw;
         padding: 20px;
         background-color: $quaternary-color;
-        border-style: none;
         border-radius: 35px;
         color: white;
         font-size: 1em;
@@ -119,10 +137,11 @@ section {
                 display: flex;
                 justify-content: flex-end;
                 padding-bottom: 12px;
-                svg{
+                @include svgStyle($primary-text-color,28px ,28px );
+                /* svg{
                     width: 28px;
                     height: 28px;
-                }
+                } */
             }
             .product-image {
                 width: 100%;
@@ -131,9 +150,6 @@ section {
                 justify-content: center;
                 align-items: center;
                 img {
-                    /* width: 200px;
-                    height: 250px; */
-                    /* width: 12vw; */
                     width: 20vw;
                     height: 25vw;
                     object-fit: cover;
@@ -157,6 +173,9 @@ section {
         .product-card {
             background-color: $tertiary-color;
             color: white;
+            .icon {
+                @include svgStyle(white,28px ,28px );
+            }
         }
     }
 }

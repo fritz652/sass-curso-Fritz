@@ -4,16 +4,15 @@ body {
   background-color: #FFEFE7;
   font-family: "IBM Plex Sans", sans-serif;
 }
-body svg path {
-  stroke: currentColor;
-}
 
 nav {
   width: auto;
-  padding: 10px;
-  background-color: #FFEFE7;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #FFEFE7;
   color: #7C6A0A;
 }
 nav p {
@@ -27,6 +26,13 @@ nav .icons {
 nav .icons button {
   background: none;
   border-style: none;
+}
+nav .icons svg {
+  width: 36px;
+  height: 36px;
+}
+nav .icons svg path {
+  stroke: #7C6A0A;
 }
 
 article {
@@ -53,10 +59,13 @@ article p {
   font-size: 1.5em;
 }
 article button {
+  background: none;
+  border-style: none;
+}
+article button {
   width: 12vw;
   padding: 20px;
   background-color: #FA9500;
-  border-style: none;
   border-radius: 35px;
   color: white;
   font-size: 1em;
@@ -112,10 +121,17 @@ section .healthcare .product-card .icon, section .furniture .product-card .icon 
   display: flex;
   justify-content: flex-end;
   padding-bottom: 12px;
+  /* svg{
+      width: 28px;
+      height: 28px;
+  } */
 }
 section .healthcare .product-card .icon svg, section .furniture .product-card .icon svg {
   width: 28px;
   height: 28px;
+}
+section .healthcare .product-card .icon svg path, section .furniture .product-card .icon svg path {
+  stroke: #7C6A0A;
 }
 section .healthcare .product-card .product-image, section .furniture .product-card .product-image {
   width: 100%;
@@ -125,9 +141,6 @@ section .healthcare .product-card .product-image, section .furniture .product-ca
   align-items: center;
 }
 section .healthcare .product-card .product-image img, section .furniture .product-card .product-image img {
-  /* width: 200px;
-  height: 250px; */
-  /* width: 12vw; */
   width: 20vw;
   height: 25vw;
   -o-object-fit: cover;
@@ -147,6 +160,13 @@ section .healthcare .product-card .product-image img, section .furniture .produc
 section .furniture .product-card {
   background-color: #BABD8D;
   color: white;
+}
+section .furniture .product-card .icon svg {
+  width: 28px;
+  height: 28px;
+}
+section .furniture .product-card .icon svg path {
+  stroke: white;
 }
 
 .footer {
