@@ -38,15 +38,21 @@ nav .icons svg path {
 article {
   width: auto;
   color: #7C6A0A;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 45px;
   padding-right: 45px;
-  display: flex;
   padding-top: 70px;
-  justify-content: space-between;
 }
 article .impact-section {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* display: flex;
+  flex-direction: column; */
   padding-top: 50px;
   gap: 25px;
 }
@@ -98,11 +104,16 @@ section .healthcare h2, section .furniture h2 {
 }
 section .healthcare .card-section, section .furniture .card-section {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* El include en este caso reeplaza los siguientes estilos: */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   width: auto;
   height: auto;
-  justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
   -moz-column-gap: 100px;
        column-gap: 100px;
   row-gap: 80px;
