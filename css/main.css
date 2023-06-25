@@ -207,11 +207,23 @@ section .furniture .product-card .icon svg path {
   display: flex;
   align-items: center;
 }
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: rox;
+  justify-content: space-between;
+  align-items: center;
+}
 .gallery .gallery-images img {
-  width: 20vw;
-  height: 40vw;
+  width: 28vw;
+  height: 45vh;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+  border-radius: 16px;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
 }
 
 .footer {

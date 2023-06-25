@@ -211,10 +211,16 @@ section {
 }
 .gallery {
     .gallery-images {
+        @include flexCenter(rox, space-between ,center );
         img {
-            width: 20vw;
-            height: 40vw;
+            width: 28vw;
+            height: 45vh;
             object-fit: cover;
+            object-position: 5px 35%;
+            border-radius: 16px;
+            &:hover {
+                transform:scale(1.1);
+            }
         }
     }
 }
