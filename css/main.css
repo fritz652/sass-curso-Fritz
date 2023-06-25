@@ -207,6 +207,13 @@ section .furniture .product-card .icon svg path {
   display: flex;
   align-items: center;
 }
+.gallery .gallery-images img {
+  width: 20vw;
+  height: 40vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
   background-color: #FA9500;
   width: 100%;

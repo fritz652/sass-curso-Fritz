@@ -209,7 +209,15 @@ section {
         @extend .earth;
     }
 }
-
+.gallery {
+    .gallery-images {
+        img {
+            width: 20vw;
+            height: 40vw;
+            object-fit: cover;
+        }
+    }
+}
 .footer {
     $background :$quaternary-color;
     background-color :$background;
