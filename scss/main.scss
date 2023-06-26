@@ -20,6 +20,27 @@ $paragraph-size: 1.5em;
     }
 }
 
+@mixin mobile{
+    
+    p {
+        @media (max-width:530px) {
+            font-size: 1em;
+        }
+    }
+
+    img {
+        @media (max-width:1250px) {
+            width: 30vw;
+        }
+        @media (max-width:920px) {
+            min-width: 40vw;
+        }
+        @media (max-width:500px) {
+            width: 80vw;
+        }
+    }
+}
+
 @mixin svgStyle ($color, $width, $height){
     svg {
         width: $width;
@@ -58,14 +79,16 @@ nav {
 article {
     width: auto;
     color:$primary-text-color;
+    gap:20px;
     @include flexCenter(row, space-between, center);
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 70px;
+    @media (max-width:500px) {
+        @include flexCenter(column, space-between, center);
+    }
     .impact-section {
         @include flexCenter(column, space-evenly , flex-start );
-        /* display: flex;
-        flex-direction: column; */
         padding-top: 50px;
         gap:25px
     }
@@ -79,7 +102,7 @@ article {
     }
     @include buttonStyle;
     button {
-        width: 12vw;
+        width: 200px; //12vw
         padding: 20px;
         background-color: $quaternary-color;
         border-radius: 35px;
@@ -94,6 +117,7 @@ article {
         width: 25vw;
         border-radius: 19px;
     }
+    @include mobile();
 }
 
 main {
